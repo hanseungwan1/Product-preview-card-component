@@ -1,36 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Product preview card component</title>
 
-  Preview
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f3eae3;
+      }
+      .Main {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        width: 600px;
+        height: 450px;
+        border-radius: 10px;
+        background-color: #ffff;
+      }
+      .Main__Text__Btu {
+        width: 237px;
+        height: 46px;
+        background-color: #3d8168;
+        border: none;
+        border-radius: 10px;
+        color: #ffff;
+        margin-top: 15px;
+      }
+      .Main__ParfumImage {
+        width: 300px;
+        height: 450px;
+        border-radius: 10px 0 0 10px;
+      }
+      .Main__Text {
+        width: 300px;
+        height: 450px;
+        margin: 35px 0 0 30px;
+      }
+      .Main__Text__Cost__Sale {
+        color: #3d8168;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      .Main__Text__Header {
+        font-size: 13px;
+        font-weight: 500;
+        color: gray;
+        margin: 0px;
+      }
+      .Main__Text__Name {
+        font-size: 30px;
+        font-weight: bold;
 
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        margin-top: 26px;
+        margin-bottom: 0px;
+      }
+      .Main__Text__Des {
+        color: gray;
+        margin-top: 30px;
+        margin-bottom: 0px;
+      }
+      .Main__Text__Cost {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .Main__Text__Cost__Nosale {
+        margin-left: 20px;
+        text-decoration: line-through;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Main">
+      <img
+        src="/images/image-product-desktop.jpg"
+        alt="Parfum_image"
+        class="Main__ParfumImage"
+      />
+      <div class="Main__Text">
+        <p class="Main__Text__Header">P E R F U M E</p>
+        <p class="Main__Text__Name">
+          Gabrielle<br />Essence Eau<br />
+          De Parfum
+        </p>
+        <p class="Main__Text__Des">
+          A floral, solar and voluptuous<br />
+          interpretation composed by<br />
+          Olivier Polge, Perfumer-Creator<br />
+          for the House of CHANEL.
+        </p>
+        <div class="Main__Text__Cost">
+          <span class="Main__Text__Cost__Sale">$149.99</span>
+          <span class="Main__Text__Cost__Nosale">$169.99</span>
+        </div>
+        <button class="Main__Text__Btu">Add to Cart</button>
+      </div>
+    </div>
+  </body>
 </html>
