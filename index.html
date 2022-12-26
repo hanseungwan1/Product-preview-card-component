@@ -20,6 +20,7 @@
         box-sizing: border-box;
       }
       body {
+        height: 100vh;
         margin: 0;
         display: flex;
         align-items: center;
@@ -43,7 +44,18 @@
         border-radius: 10px;
         color: #ffff;
         margin-top: 15px;
+        font-size: 15px;
+        font-weight: bold;
       }
+      .Main__Text__Btu__icon {
+        width: 14px;
+        height: 14px;
+      }
+      .Main__Text__Btu:hover {
+        background-color: #1a4031;
+        cursor: pointer;
+      }
+
       .Main__ParfumImage {
         width: 300px;
         height: 450px;
@@ -112,7 +124,12 @@
           <span class="Main__Text__Cost__Sale">$149.99</span>
           <span class="Main__Text__Cost__Nosale">$169.99</span>
         </div>
-        <button class="Main__Text__Btu">Add to Cart</button>
+        <button class="Main__Text__Btu">
+          <img
+            class="Main__Text__Btu__icon"
+            src="/images/icon-cart.svg"
+          />&nbsp;&nbsp;&nbsp;Add to Cart
+        </button>
       </div>
     </div>
   </body>
